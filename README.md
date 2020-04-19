@@ -1,4 +1,6 @@
 # Grammar Bot
+![status](https://img.shields.io/badge/status-ready%20to%20use-green)
+
 A Twitter grammar bot. It will 'correct' grammatical errors in the tweets of anyone who follows it.
 
 This is the robot that sends tweets for the [Grammar Helper](https://twitter.com/HelperGrammar) Twitter account.
