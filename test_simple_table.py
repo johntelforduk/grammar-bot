@@ -42,5 +42,6 @@ class TestSimpleTable(unittest.TestCase):
         third_table = SimpleTable(filename)
         self.assertEqual(third_table.rows, ['Tom', 'Dick', 'Harry', 'Barry', 'Larry'])
 
+
 if __name__ == '__main__':
     unittest.main()
