@@ -1,6 +1,6 @@
 # Twitter bot that 'corrects' the grammar of people who follow it.
 
-from flask import Flask
+from flask import Flask, render_template
 from datetime import datetime
 import tweepy
 from sys import argv
@@ -104,32 +104,18 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello():
+def dashboard():
+
     # If the queue has messages in it from the Twitter Stream, then add them to the history table.
     if not q.empty():
         while not q.empty():
             history.insert(q.get())
         history.commit()
 
-    the_page = 'Hello, I am the Grammar Helper robot. '
-    the_page += 'Follow me on <a href="https://twitter.com/HelperGrammar">Twitter</a>.<br><br>'
-    the_page += 'The time is: ' + now_str()
-    the_page += '<br><br>'
-    the_page += 'At the moment, I am helping these Twitter users improve there grammar,<br>'
-    for each_follower in follower_names:
-        the_page += each_follower + '<br>'
-
-    the_page += "<br>I'm sure that these corrections helped them a lot...<br>"
-
-    # Each row is a list like this,
-    # [timestamp, user_screen_name, text, reply_text]
-    for h in last_n_items(history.rows, 10):
-        timestamp, user_screen_name, text, reply_text = h[0], h[1], h[2], h[3]
-        the_page += ('<strong>' + timestamp + '</strong><br>'
-                     + '<strong>@' + user_screen_name + '</strong>: ' + text + '<br>'
-                     + '<strong>@HelperGrammar</strong>: ' + reply_text + '<br><br>')
-
-    return the_page
+    return render_template('dashboard.html',
+                           parm_time=now_str(),
+                           parm_followers=follower_names,
+                           parm_history=last_n_items(history.rows, 10))
 
 
 app.run()

@@ -38,7 +38,12 @@ python server.py
 #### Glitch
 The project contains a `glitch.json` file for deployment on [Glitch](https://glitch.com/).
 
-[Useful guide for deploying Python on Glitch](https://pythonprogramming.altervista.org/flask-and-python-3-on-glitch-in-a-couple-of-lines/).
+[Guide for deploying Python on Glitch](https://pythonprogramming.altervista.org/flask-and-python-3-on-glitch-in-a-couple-of-lines/).
+
+#### Flask
+[Flask template rendering](https://flask.palletsprojects.com/en/1.1.x/quickstart/#rendering-templates).
+
+[Jinja templates](https://jinja.palletsprojects.com/en/2.11.x/templates/).
 
 #### Twitter Account Logos
 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Grammar_Nazi_Icon.svg)
