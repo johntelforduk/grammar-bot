@@ -23,6 +23,11 @@ API_KEY=<your API key>
 API_SECRET_KEY=<your API secret key>
 ACCESS_TOKEN=<your access token>
 ACCESS_TOKEN_SECRET=<your access token secret>
+
+# AWS credentials
+AWS_ACCESS_KEY_ID=<your access key>
+AWS_SECRET_ACCESS_KEY=<your secret access key>
+AWS_DEFAULT_REGION=<your default region>
 ```
 
 #### Testing
