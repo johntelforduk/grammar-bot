@@ -15,8 +15,8 @@ I'm sure that these corrections helped them a lot...<br>
     {% for tweet in parm_history %}
         <!-- Elements are in this order in the list. -->
         <!-- [timestamp, user_screen_name, text, reply_text] -->
-        {{ tweet[0] }}<br>
-        @{{ tweet[1] }}: {{ tweet[2] }}<br>
-        @HelperGrammar: {{ tweet[3] }}<br><br>
+        {{ tweet['timestamp'] }}<br>
+        @{{ tweet['user_screen_name'] }}: {{ tweet['text'] }}<br>
+        @HelperGrammar: {{ tweet['reply_text'] }}<br><br>
     {% endfor %}
 </blockquote>

@@ -10,6 +10,7 @@ This is the robot that sends tweets for the [Grammar Helper](https://twitter.com
 pip install flask
 pip install tweepy
 pip install python-dotenv
+pip install boto3
 pip install pytest
 ```
 See `installation.txt` for details.
