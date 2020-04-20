@@ -30,7 +30,7 @@ class GrammarBot:
         keyword_count = 0
         suggestion = ''
         for (keyword, substitute) in self.two_way_swaps:
-            if keyword in message:
+            if keyword in message.lower():                  # Normalise tweets to lower case.
                 keyword_count += 1
                 suggestion = substitute
 
