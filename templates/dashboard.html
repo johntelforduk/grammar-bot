@@ -10,13 +10,13 @@ At the moment, I am helping these Twitter users improve there grammar,<br>
         {{ follower|e }}<br>
     {% endfor %}
 </blockquote>
-I'm sure that these corrections helped them a lot...<br>
+I'm sure that these recent corrections helped them a lot...<br>
 <blockquote>
-    {% for tweet in parm_history %}
+    {% for tweet in parm_last_tweets %}
         <!-- Elements are in this order in the list. -->
         <!-- [timestamp, user_screen_name, text, reply_text] -->
         {{ tweet['timestamp'] }}<br>
-        @{{ tweet['user_screen_name'] }}: {{ tweet['text'] }}<br>
+        {{ tweet['user_screen_name'] }}: {{ tweet['text'] }}<br>
         @HelperGrammar: {{ tweet['reply_text'] }}<br><br>
     {% endfor %}
 </blockquote>

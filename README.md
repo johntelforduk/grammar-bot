@@ -40,9 +40,9 @@ pytest
 ```
 python server.py
 ```
-
+Add a `-d` argument to run it in debug mode (send trace info to stdout).
 #### Glitch
-The project contains a `glitch.json` file for deployment on [Glitch](https://glitch.com/).
+The project contains a `glitch.json` file for deployment on [Glitch](https://glitch.com/). It is running [here](https://acute-veiled-haircut.glitch.me/).
 
 [Guide for deploying Python on Glitch](https://pythonprogramming.altervista.org/flask-and-python-3-on-glitch-in-a-couple-of-lines/).
 
