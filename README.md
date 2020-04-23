@@ -28,6 +28,8 @@ ACCESS_TOKEN_SECRET=<your access token secret>
 AWS_ACCESS_KEY_ID=<your access key>
 AWS_SECRET_ACCESS_KEY=<your secret access key>
 AWS_DEFAULT_REGION=<your default region>
+TWITTER_TABLE=<your table name>
+TEST_TWITTER_TABLE=<your test table name>
 ```
 
 #### Testing
