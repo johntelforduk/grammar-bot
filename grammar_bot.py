@@ -9,8 +9,33 @@ class GrammarBot:
         # users that the bot has sent tweets to in history.
 
         # Pairs of words that the bot will suggest are swapped for each other.
-        one_way_swaps = [('compliment', 'complement'),
-                         ('stationary', 'stationery')]
+        one_way_swaps = [('accept', 'except'),
+                         ('affect', 'effect'),
+                         ('allusion', 'illusion'),
+                         ('ascent', 'assent'),
+                         ('breath', 'breathe'),
+                         ('capital', 'capitol'),
+                         ('cite', 'sight'),
+                         ('compliment', 'complement'),
+                         ('conscience', 'conscious'),
+                         ('council', 'counsel'),
+                         ('elicit', 'illicit'),
+                         ('immanent', 'imminent'),
+                         ('lead', 'led'),
+                         ('lie', 'lay'),
+                         ('lose', 'loose'),
+                         ('passed', 'past'),
+                         ('precede', 'proceed'),
+                         ('principal', 'principle'),
+                         ('quote', 'quotation'),
+                         ('reluctant', 'reticent'),
+                         ('stationary', 'stationery'),
+                         ('than', 'then'),
+                         ('their', 'there'),
+                         ('through', 'threw'),
+                         ('too', 'two'),
+                         ('vain', 'vein'),
+                         ('who', 'whom')]
 
         # For each one way swap, work out its opposite. And make list of keywords to look for.
         self.two_way_swaps = []

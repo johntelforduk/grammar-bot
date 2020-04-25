@@ -5,6 +5,8 @@ A Twitter grammar bot. It will 'correct' grammatical errors in the tweets of any
 
 This is the robot that sends tweets for the [Grammar Helper](https://twitter.com/HelperGrammar) Twitter account.
 
+Pairs of words that it corrects are from [University of Richmond Writing Center](http://writing2.richmond.edu/writing/wweb/conford.html).
+
 #### Installation
 ```
 pip install flask
